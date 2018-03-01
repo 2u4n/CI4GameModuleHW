@@ -30,6 +30,7 @@ public class GameCanvas extends JPanel {
         this.graphics = this.backBuffered.getGraphics();
     }
 
+    //draw shits out
     @Override
     protected void paintComponent(Graphics g) {
         //Draw images
@@ -52,11 +53,13 @@ public class GameCanvas extends JPanel {
         }
     }
 
+    //also draw shits out
     @Override
     protected void paintChildren(Graphics g) {
         g.drawImage(this.backBuffered,0,0,null);
     }
 
+    //move squares
     public void generateVector(){
         String[] moves = {"vX","vY"};
         int i = (int)(Math.random()*moves.length);
@@ -72,6 +75,7 @@ public class GameCanvas extends JPanel {
         }
     }
 
+    //run squares
     public void run(){
         if (hasX){
             this.squareX += vX;
@@ -83,6 +87,7 @@ public class GameCanvas extends JPanel {
         }
     }
 
+    //bounce back when hit boundaries
     public void bounceBack(){
         if (this.squareX > 400) vX = -5;
         else if (this.squareX <0) vX = 5;
