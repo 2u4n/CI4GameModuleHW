@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ac7a894-f3a5-4123-a471-3f31703f8a5d" name="Default" comment="" />
+    <list default="true" id="3ac7a894-f3a5-4123-a471-3f31703f8a5d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/resources/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/background/background.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/explostion/player_explosion_particle_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/explostion/player_explosion_particle_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/explostion/player_explosion_particle_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/explostion/player_explosion_particle_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/explostion/player_explosion_particle_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/left.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/player_bullet.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/player_bullet_explosion.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/right.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/straight.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/player/straight_white.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/sound/bgm/bgmwav.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/sound/sfx/enemy_explosion.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/sound/sfx/enemy_shoot.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/sound/sfx/player_bullet_hit.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/sound/sfx/player_explosion.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/sound/sfx/player_shoot.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/enemy_square_bullet.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/enemy_square_large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/enemy_square_medium.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/enemy_square_small.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/explosion/enemy_square_explosion_particle_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/explosion/enemy_square_explosion_particle_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/explosion/enemy_square_explosion_particle_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/explosion/enemy_square_explosion_particle_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/explosion/enemy_square_explosion_particle_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/square/square_deadly_bullet.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/ui/heart.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/ui/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/ui/replay.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/ui/replay_hover.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/ui/start_game.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/ui/start_game_hover.png" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,48 +49,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="player_bullet.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/player/player_bullet.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="straight.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/player/straight.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="straight_white.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/player/straight_white.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_explosion_particle_1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/player/explostion/player_explosion_particle_1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_explosion_particle_2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/player/explostion/player_explosion_particle_2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_explosion_particle_3.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/player/explostion/player_explosion_particle_3.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GameWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,13 +76,65 @@
       <file leaf-file-name="GameCanvas.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="187">
               <caret line="89" column="37" lean-forward="false" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1644#1645#0" expanded="true" />
                 <element signature="e#1699#1700#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/ui/logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heart.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/ui/heart.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="replay.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/ui/replay.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start_game.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/ui/start_game.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="replay_hover.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/ui/replay_hover.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start_game_hover.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/ui/start_game_hover.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="level1.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/json/level1.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,17 +202,6 @@
             <path>
               <item name="GeoArcade" type="b2602c69:ProjectViewProjectNode" />
               <item name="GeoArcade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeoArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoArcade" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeoArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoArcade" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="square" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GeoArcade" type="b2602c69:ProjectViewProjectNode" />
@@ -344,6 +380,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -358,7 +395,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -537,38 +574,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ui/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ui/heart.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ui/replay.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ui/start_game.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ui/replay_hover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/json/level1.json" />
     <entry file="file://$PROJECT_DIR$/resources/background/background.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ui/start_game_hover.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -643,9 +649,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/ui/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/ui/heart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/ui/replay.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/ui/start_game.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/ui/replay_hover.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/ui/start_game_hover.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/json/level1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="187">
           <caret line="89" column="37" lean-forward="false" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
