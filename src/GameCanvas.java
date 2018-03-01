@@ -30,10 +30,6 @@ public class GameCanvas extends JPanel {
         this.graphics = this.backBuffered.getGraphics();
     }
 
-    //Move randomly
-
-
-
     @Override
     protected void paintComponent(Graphics g) {
         //Draw images
