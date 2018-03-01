@@ -21,7 +21,6 @@ public class GameCanvas extends JPanel {
     int vY;
     boolean hasX = false;
     boolean hasPositive = false;
-    boolean checkForBoundaries = false;
 
     public GameCanvas() {
         this.setSize(400, 600);
