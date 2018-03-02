@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ac7a894-f3a5-4123-a471-3f31703f8a5d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" afterPath="$PROJECT_DIR$/src/GameCanvas.java" />
-      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -339,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519896228568</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Homework for Game Module 1 (Yêu cầu chạy chéo và tạo ra nhiều squares bất kì)">
+      <created>1519989510816</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1519989510816</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -407,7 +412,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Homework for Game Module 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework for Game Module 1" />
+    <MESSAGE value="Homework for Game Module 1 (Yêu cầu chạy chéo và tạo ra nhiều squares bất kì)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework for Game Module 1 (Yêu cầu chạy chéo và tạo ra nhiều squares bất kì)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
