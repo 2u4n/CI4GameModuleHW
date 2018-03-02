@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class GameCanvas extends JPanel {
 
@@ -28,11 +28,7 @@ public class GameCanvas extends JPanel {
         //Load Images
         this.backBuffered = new BufferedImage(400,600,BufferedImage.TYPE_4BYTE_ABGR);
         this.graphics = this.backBuffered.getGraphics();
-    }
 
-    //draw shits out
-    @Override
-    protected void paintComponent(Graphics g) {
         //Draw images
         //Phải "try" vì file có thể có 3 trường hợp: path sai, file ko tồn tại, file hỏng. Catch thì nó sẽ nhảy qua và không làm crash
         try {
@@ -49,14 +45,26 @@ public class GameCanvas extends JPanel {
         try {
             this.square = ImageIO.read(new File("resources/square/enemy_square_small.png"));
         } catch (IOException e) {
-                e.printStackTrace();
+            e.printStackTrace();
         }
     }
 
-    //also draw shits out
+    //draw shits out
     @Override
-    protected void paintChildren(Graphics g) {
-        g.drawImage(this.backBuffered,0,0,null);
+    protected void paintComponent(Graphics g) {
+        g.drawImage(this.backBuffered, 0, 0, null);
+    }
+
+    public boolean yBoundary(){
+        if(this.squareY >= 600){
+            return true;
+        }
+        return false;
+    }
+
+    public void generateSquares(){
+        this.squareX = (int)(Math.random()*400);
+        this.squareY = 0;
     }
 
     //move squares
@@ -76,7 +84,7 @@ public class GameCanvas extends JPanel {
     }
 
     //run squares
-    public void run(){
+    public void moveVertically(){
         if (hasX){
             this.squareX += vX;
             this.squareY = 0;
@@ -87,12 +95,17 @@ public class GameCanvas extends JPanel {
         }
     }
 
+    public void moveDiagonally(){
+        this.squareX += vX;
+        this.squareY += vY;
+    }
+
     //bounce back when hit boundaries
     public void bounceBack(){
-        if (this.squareX > 400) vX = -5;
+        if (this.squareX >= 400) vX = -5;
         else if (this.squareX <0) vX = 5;
-        else if (this.squareY > 600) vY = -5;
-        else if (this.squareY < 0) vY = 5;
+//        if (this.squareY > 600) vY = -5;
+//        if (this.squareY < 0) vY = 5;
     }
 
     public void renderAll(){

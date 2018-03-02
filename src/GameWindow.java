@@ -31,10 +31,12 @@ public class GameWindow extends JFrame {
         while(true){
             long currentTime = System.nanoTime();
             if(currentTime - lastTime >= 17_000_000){
-                this.gameCanvas.run();
+//                this.gameCanvas.moveVertically();
+                this.gameCanvas.moveDiagonally();
                 this.gameCanvas.renderAll();
                 this.gameCanvas.bounceBack();
                 lastTime = currentTime;
+                if (this.gameCanvas.yBoundary())this.gameCanvas.generateSquares();
             }
         }
     }
