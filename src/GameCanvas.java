@@ -4,46 +4,55 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Vector;
 
 public class GameCanvas extends JPanel {
 
     BufferedImage background;
-    BufferedImage player;
-    BufferedImage square;
+    Player player;
+    Vector<Bullet> bulletVector;
+    Vector<SquareBullet> squareBulletVector;
+    MediumSquare mediumSquare;
+    Vector<SmallSquare> smallSquareVector;
     BufferedImage backBuffered;
     Graphics graphics;
-    int pX;
-    int pY;
-    int squareX;
-    int squareY;
-    int vX;
-    int vY;
-    boolean hasX = false;
-    boolean hasPositive = false;
+    int countSquare;
+    boolean mediumSquareBottomCheck = false;
 
     public GameCanvas() {
-        this.setSize(400, 600);
-        this.setVisible(true);
-        //Load Images
+        this.setUp();
+        this.setUpBackBuffered();
+        this.setBackground();
+        this.setPlayer();
+        this.setMediumSquare();
+        this.bulletVector = new Vector<>();
+        this.squareBulletVector = new Vector<>();
+        this.smallSquareVector = new Vector<>();
+//        this.mediumSquareVector = new Vector<>();
+    }
+
+    private void setUpBackBuffered(){
         this.backBuffered = new BufferedImage(400,600,BufferedImage.TYPE_4BYTE_ABGR);
         this.graphics = this.backBuffered.getGraphics();
+    }
 
-        //Draw images
+    private void setUp(){
+        this.setSize(400, 600);
+        this.setVisible(true);
+    }
+
+    private void setBackground(){
         //Phải "try" vì file có thể có 3 trường hợp: path sai, file ko tồn tại, file hỏng. Catch thì nó sẽ nhảy qua và không làm crash
         try {
             this.background = ImageIO.read(new File("resources/background/background.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+    private void setPlayer(){
         try {
-            this.player = ImageIO.read(new File("resources/player/straight.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            this.square = ImageIO.read(new File("resources/square/enemy_square_small.png"));
+            this.player = new Player(ImageIO.read(new File("resources/player/straight.png")),0,0);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -55,63 +64,89 @@ public class GameCanvas extends JPanel {
         g.drawImage(this.backBuffered, 0, 0, null);
     }
 
-    public boolean yBoundary(){
-        if(this.squareY >= 600){
-            return true;
+    public void runAll(){
+        this.generateSquare();
+        this.generateBullet();
+        this.generateSquareBullet();
+        this.mediumSquare.run();
+        this.squareRun();
+        this.bulletShoot();
+        this.squareBulletShoot();
+//        randomX = (int)(Math.random()*400);
+    }
+
+    public void generateSquare(){
+        if(this.countSquare >= 30){
+            try {
+                SmallSquare smallSquare = new SmallSquare(ImageIO.read(new File("resources/square/enemy_square_small.png")),(int)(Math.random()*400),0, 0,5);
+                this.smallSquareVector.add(smallSquare);
+                this.countSquare = 0;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        return false;
-    }
-
-    public void generateSquares(){
-        this.squareX = (int)(Math.random()*400);
-        this.squareY = 0;
-    }
-
-    //move squares
-    public void generateVector(){
-        String[] moves = {"vX","vY"};
-        int i = (int)(Math.random()*moves.length);
-        if(moves[i].equalsIgnoreCase("vx"))
-            hasX = true;
-        int[] vectors = {5,-5};
-        vX = vectors[i];
-        vY = vectors[i];
-        if(vX > 0 || vY > 0){
-            hasPositive = true;
-            vX = 5;
-            vY = 5;
+        else{
+            this.countSquare += 1;
         }
     }
 
-    //run squares
-    public void moveVertically(){
-        if (hasX){
-            this.squareX += vX;
-            this.squareY = 0;
-        }
-        if (!hasX){
-            this.squareY += vY;
-            this.squareX = 0;
+    private void setMediumSquare(){
+        try {
+            this.mediumSquare = new MediumSquare(ImageIO.read(new File("resources/square/enemy_square_medium.png")), 10,0, 0,1);
+//               this.mediumSquareVector.add(mediumSquare);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
-    public void moveDiagonally(){
-        this.squareX += vX;
-        this.squareY += vY;
+    private void squareRun(){
+        this.smallSquareVector.forEach(smallSquare -> smallSquare.run());
+//        this.mediumSquareVector.forEach(mediumSquare -> mediumSquare.run());
     }
 
-    //bounce back when hit boundaries
-    public void bounceBack(){
-        if (this.squareX >= 400) vX = -5;
-        else if (this.squareX <0) vX = 5;
-//        if (this.squareY > 600) vY = -5;
-//        if (this.squareY < 0) vY = 5;
+    public void generateBullet(){
+        if(this.countSquare >= 30){
+            try {
+                Bullet bullet = new Bullet(ImageIO.read(new File("resources/player/player_bullet.png")),player.x + 20,player.y, 0,-5);
+                this.bulletVector.add(bullet);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else{
+            this.countSquare += 1;
+        }
+    }
+
+    public void generateSquareBullet(){
+        if(this.countSquare >= 30){
+            try {
+                SquareBullet squareBullet = new SquareBullet(ImageIO.read(new File("resources/square/enemy_square_bullet.png")),mediumSquare.x + 15,mediumSquare.y ,0,10);
+                this.squareBulletVector.add(squareBullet);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else{
+            this.countSquare += 1;
+        }
+    }
+
+    private void bulletShoot(){
+        this.bulletVector.forEach(bullet -> bullet.shoot());
+    }
+//
+    private void squareBulletShoot(){
+        this.squareBulletVector.forEach(squareBullet -> squareBullet.shoot());
     }
 
     public void renderAll(){
         this.graphics.drawImage(this.background, 0, 0, null);
-        this.graphics.drawImage(this.square, this.squareX,this.squareY, null);
-        this.graphics.drawImage(this.player, this.pX, this.pY, null);
+        this.smallSquareVector.forEach(smallSquare -> smallSquare.render(graphics));
+        this.mediumSquare.render(graphics);
+        this.squareBulletVector.forEach(squareBullet -> squareBullet.render(graphics));
+        this.bulletVector.forEach(bullet -> bullet.render(graphics));
+        this.player.render(graphics);
         this.repaint();
     }
 }
