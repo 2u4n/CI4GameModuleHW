@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ac7a894-f3a5-4123-a471-3f31703f8a5d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Bullet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/MediumSquare.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Player.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/SmallSquare.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/SquareBullet.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/GeoArcade/GameCanvas.class" afterPath="$PROJECT_DIR$/out/production/GeoArcade/GameCanvas.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow$1.class" afterPath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow$2.class" afterPath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow$2.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow.class" afterPath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow.class" />
-      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" afterPath="$PROJECT_DIR$/src/GameCanvas.java" />
-      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -483,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519989529390</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Homework buổi 2: tạo ra medium square đi từ trên xuống và bắn đạn">
+      <created>1520385006984</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1520385006984</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -552,7 +551,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Homework for Game Module 1" />
     <MESSAGE value="Homework for Game Module 1 (Yêu cầu chạy chéo và tạo ra nhiều squares bất kì)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework for Game Module 1 (Yêu cầu chạy chéo và tạo ra nhiều squares bất kì)" />
+    <MESSAGE value="Homework buổi 2: tạo ra medium square đi từ trên xuống và bắn đạn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework buổi 2: tạo ra medium square đi từ trên xuống và bắn đạn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
