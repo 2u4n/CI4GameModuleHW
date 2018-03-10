@@ -44,8 +44,7 @@ public class Square extends GameObject{
             this.y += this.dY;
         } else if (this.x < 365 && this.y == 565 && hitX) {
             this.x += this.dX;
-        }
-        else if (this.x == 365 && this.y < 600 && !hitY) {
+        } else if (this.x == 365 && this.y < 600 && !hitY) {
             hitX = true;
             this.y += this.dY;
         }
