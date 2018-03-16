@@ -30,23 +30,23 @@ public class GameWindow extends JFrame {
 
     private void mouseMotionListener() {
         this.addMouseMotionListener(new MouseMotionAdapter() {
+
             @Override
+
             public void mouseMoved(MouseEvent e) {
-                if (e.getX() < (400 - 40) && e.getY() < (600 - 40)) {
-                    gameCanvas.player.x = e.getX();
-                    gameCanvas.player.y = e.getY();
+                if (e.getX() > 0 && e.getX() < 400 - 40) {
+                    gameCanvas.player.position.x = e.getX();
+                } else if (e.getX() < 0) {
+                    gameCanvas.player.position.x = 0;
+                } else {
+                    gameCanvas.player.position.x = 400 - 40;
                 }
-                if (e.getX() >= (400 - 40)) {
-                    gameCanvas.player.x = (400 - 40);
-                    gameCanvas.player.y = e.getY();
-                }
-                if (e.getY() >= (600 - 40)) {
-                    gameCanvas.player.x = e.getX();
-                    gameCanvas.player.y = (600 - 40);
-                }
-                if (e.getX() >= (400 - 40) && e.getY() >= (600 - 40)) {
-                    gameCanvas.player.x = (400 - 40);
-                    gameCanvas.player.y = (600 - 40);
+                if (e.getY() > 0 && e.getY() < 600 - 40) {
+                    gameCanvas.player.position.y = e.getY();
+                } else if (e.getY() < 0) {
+                    gameCanvas.player.position.y = 0;
+                } else {
+                    gameCanvas.player.position.y = 600 - 40;
                 }
             }
         });
@@ -55,8 +55,8 @@ public class GameWindow extends JFrame {
     private void windowListener(){
         this.addWindowListener(new WindowAdapter() {
             @Override
-            public void windowClosing(WindowEvent e) {
-                System.exit(1);
+            public void windowClosed(WindowEvent e) {
+               System.exit(1);
             }
         });
     }

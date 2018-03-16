@@ -1,3 +1,8 @@
+package game.background;
+
+import base.GameObject;
+import utils.Utils;
+
 public class Background extends GameObject {
 
     public Background(){

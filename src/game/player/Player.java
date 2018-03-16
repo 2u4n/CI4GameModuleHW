@@ -1,7 +1,10 @@
-import java.awt.*;
-import java.awt.image.BufferedImage;
+package game.player;
 
-public class Player extends GameObject{
+import base.GameObject;
+import game.player.playerbullet.PlayerShoot;
+import utils.Utils;
+
+public class Player extends GameObject {
 
     private PlayerShoot playerShoot;
 
