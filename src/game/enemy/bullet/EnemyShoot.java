@@ -15,7 +15,8 @@ public class EnemyShoot extends GameObject {
         if (this.frameCounter.run()) {
             SquareBullet squareBullet = new SquareBullet();
             squareBullet.position.set(enemy.position);
-            squareBullet.velocity.set(getPlayer().position.subtract(squareBullet.position).normalize());
+            squareBullet.velocity.set(getPlayer().position.subtract(squareBullet.position));
+            squareBullet.velocity.set(squareBullet.velocity.normalize().multiply(3));
 //            System.out.println(getPlayer().position.getX() + "," + getPlayer().position.getY() + "," + squareBullet.position.getX() + "," + squareBullet.position.getY());
             GameObject.add(squareBullet);
         }

@@ -1,37 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ac7a894-f3a5-4123-a471-3f31703f8a5d" name="Default" comment="Homework buổi 3: tạo ra ma trận square nhỏ đi từ trái sang phải và từ phải sang trái">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Draft.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/base/FrameCounter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/base/GameObject.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/base/Vector2D.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/enemy/bullet/EnemyShoot.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/player/playerbullet/HitSquare.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/player/playerbullet/PlayerBullet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/square/Square.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/square/bullet/SquareBullet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/square/circle/SquareCircle.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/square/matrix/SquareMatrix.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/physics/BoxCollider.java" />
+    <list default="true" id="3ac7a894-f3a5-4123-a471-3f31703f8a5d" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/player/playerbullet/HitBullet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/game/player/playerbullet/HitEnemy.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/GeoArcade/GameCanvas.class" afterPath="$PROJECT_DIR$/out/production/GeoArcade/GameCanvas.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow$1.class" afterPath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow$2.class" afterPath="$PROJECT_DIR$/out/production/GeoArcade/GameWindow$2.class" />
-      <change beforePath="$PROJECT_DIR$/src/Background.java" afterPath="$PROJECT_DIR$/src/game/background/Background.java" />
-      <change beforePath="$PROJECT_DIR$/src/Enemy.java" afterPath="$PROJECT_DIR$/src/game/enemy/Enemy.java" />
-      <change beforePath="$PROJECT_DIR$/src/EnemyShoot.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/EnemySpawner.java" afterPath="$PROJECT_DIR$/src/game/enemy/bullet/EnemySpawner.java" />
-      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" afterPath="$PROJECT_DIR$/src/GameCanvas.java" />
-      <change beforePath="$PROJECT_DIR$/src/GameObject.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" afterPath="$PROJECT_DIR$/src/game/player/Player.java" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerBullet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerShoot.java" afterPath="$PROJECT_DIR$/src/game/player/playerbullet/PlayerShoot.java" />
-      <change beforePath="$PROJECT_DIR$/src/Square.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/SquareBullet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/SquareSpawner.java" afterPath="$PROJECT_DIR$/src/game/square/SquareSpawner.java" />
-      <change beforePath="$PROJECT_DIR$/src/Utils.java" afterPath="$PROJECT_DIR$/src/utils/Utils.java" />
+      <change beforePath="$PROJECT_DIR$/src/base/GameObject.java" afterPath="$PROJECT_DIR$/src/base/GameObject.java" />
+      <change beforePath="$PROJECT_DIR$/src/game/enemy/bullet/EnemyShoot.java" afterPath="$PROJECT_DIR$/src/game/enemy/bullet/EnemyShoot.java" />
+      <change beforePath="$PROJECT_DIR$/src/game/player/playerbullet/HitSquare.java" afterPath="$PROJECT_DIR$/src/game/player/playerbullet/HitSquare.java" />
+      <change beforePath="$PROJECT_DIR$/src/game/player/playerbullet/PlayerBullet.java" afterPath="$PROJECT_DIR$/src/game/player/playerbullet/PlayerBullet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,111 +19,123 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7635379">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GameObject.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/base/GameObject.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PlayerBullet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/PlayerBullet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#766#767#0" expanded="true" />
-                    <element signature="e#807#808#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PlayerShoot.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/PlayerShoot.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="101">
-                  <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GameCanvas.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="33" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="EnemyShoot.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/game/enemy/bullet/EnemyShoot.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="17" column="67" lean-forward="false" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SquareBullet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/game/square/bullet/SquareBullet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HitSquare.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/HitSquare.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="89" lean-forward="false" selection-start-line="14" selection-start-column="89" selection-end-line="14" selection-end-column="89" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Square.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/game/square/Square.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="53" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GameObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/GameObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1031">
+              <caret line="102" column="68" lean-forward="false" selection-start-line="102" selection-start-column="68" selection-end-line="102" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Draft.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Draft.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="57" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Square.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/square/Square.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-33">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SquareBullet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/square/bullet/SquareBullet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HitBullet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/HitBullet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HitEnemy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/HitEnemy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HitSquare.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/HitSquare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerBullet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/PlayerBullet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+              <folding>
+                <element signature="e#985#986#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="e#1207#1208#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerShoot.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/PlayerShoot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -179,7 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/SmallSquare.java" />
         <option value="$PROJECT_DIR$/src/MediumSquare.java" />
         <option value="$PROJECT_DIR$/src/Bullet.java" />
@@ -222,13 +210,15 @@
         <option value="$PROJECT_DIR$/src/GameCanvas.java" />
         <option value="$PROJECT_DIR$/src/game/square/circle/SquareCircle.java" />
         <option value="$PROJECT_DIR$/src/base/Vector2D.java" />
-        <option value="$PROJECT_DIR$/src/game/enemy/bullet/EnemyShoot.java" />
-        <option value="$PROJECT_DIR$/src/game/enemy/Enemy.java" />
         <option value="$PROJECT_DIR$/src/game/square/bullet/SquareBullet.java" />
-        <option value="$PROJECT_DIR$/src/game/player/playerbullet/PlayerBullet.java" />
-        <option value="$PROJECT_DIR$/src/game/player/playerbullet/PlayerShoot.java" />
-        <option value="$PROJECT_DIR$/src/base/GameObject.java" />
+        <option value="$PROJECT_DIR$/src/game/enemy/Enemy.java" />
+        <option value="$PROJECT_DIR$/src/game/enemy/bullet/EnemyShoot.java" />
+        <option value="$PROJECT_DIR$/src/game/player/playerbullet/HitBullet.java" />
+        <option value="$PROJECT_DIR$/src/game/player/playerbullet/HitEnemy.java" />
         <option value="$PROJECT_DIR$/src/game/player/playerbullet/HitSquare.java" />
+        <option value="$PROJECT_DIR$/src/game/player/playerbullet/PlayerBullet.java" />
+        <option value="$PROJECT_DIR$/src/base/GameObject.java" />
+        <option value="$PROJECT_DIR$/src/game/player/playerbullet/PlayerShoot.java" />
       </list>
     </option>
   </component>
@@ -293,21 +283,6 @@
               <item name="GeoArcade" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="enemy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeoArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoArcade" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="enemy" type="462c0819:PsiDirectoryNode" />
-              <item name="bullet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeoArcade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoArcade" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="player" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -332,6 +307,12 @@
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="square" type="462c0819:PsiDirectoryNode" />
               <item name="bullet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GeoArcade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GeoArcade" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="physics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -613,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520682140053</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Tạo vòng tròn square di chuyển chéo đập tường, bullet đuổi theo player và tạo hitbox cho tất cả đối tượng">
+      <created>1521170002420</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1521170002420</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -656,7 +644,8 @@
     <MESSAGE value="Homework for Game Module 1 (Yêu cầu chạy chéo và tạo ra nhiều squares bất kì)" />
     <MESSAGE value="Homework buổi 2: tạo ra medium square đi từ trên xuống và bắn đạn" />
     <MESSAGE value="Homework buổi 3: tạo ra ma trận square nhỏ đi từ trái sang phải và từ phải sang trái" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework buổi 3: tạo ra ma trận square nhỏ đi từ trái sang phải và từ phải sang trái" />
+    <MESSAGE value="Tạo vòng tròn square di chuyển chéo đập tường, bullet đuổi theo player và tạo hitbox cho tất cả đối tượng" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tạo vòng tròn square di chuyển chéo đập tường, bullet đuổi theo player và tạo hitbox cho tất cả đối tượng" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -665,16 +654,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/ui/start_game.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ui/replay_hover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/ui/start_game_hover.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -775,36 +754,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/square/circle/SquareCircle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Draft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="57" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/square/SquareSpawner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -817,16 +770,6 @@
     <entry file="file://$PROJECT_DIR$/resources/square/enemy_square_bullet.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/physics/BoxCollider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/FrameCounter.java">
@@ -850,14 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/function/Predicate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -866,10 +801,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/enemy/bullet/EnemySpawner.java">
+    <entry file="file://$PROJECT_DIR$/src/game/enemy/Enemy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -882,33 +817,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="630">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/square/SquareSpawner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/physics/BoxCollider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/enemy/bullet/EnemySpawner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/enemy/bullet/EnemyShoot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="67" lean-forward="false" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+        <state relative-caret-position="238">
+          <caret line="18" column="82" lean-forward="false" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/enemy/Enemy.java">
+    <entry file="file://$PROJECT_DIR$/src/GameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="53" lean-forward="false" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        <state relative-caret-position="-577">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Draft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="57" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/square/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/HitSquare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/HitEnemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/HitBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/square/bullet/SquareBullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="273">
           <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding />
         </state>
@@ -916,46 +933,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/square/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="53" />
+        <state relative-caret-position="1031">
+          <caret line="102" column="68" lean-forward="false" selection-start-line="102" selection-start-column="68" selection-end-line="102" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/PlayerBullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="289">
+          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding>
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/PlayerShoot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="136">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/playerbullet/HitSquare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="89" lean-forward="false" selection-start-line="14" selection-start-column="89" selection-end-line="14" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

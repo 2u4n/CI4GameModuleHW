@@ -94,16 +94,17 @@ public class GameObject {
                         .orElse(null);
     }
 
-//    public static SquareBullet checkCollisionSquareBullet(BoxCollider other){
-//        return (SquareBullet)
-//                vector.stream()
-//                        .filter(gameObject -> gameObject instanceof SquareBullet) //get all squares
-//                        .filter((GameObject gameObject) -> {
-//                            BoxCollider boxCollider = ((Enemy) gameObject).boxCollider; //get box collider
-//                            return boxCollider.checkCollider(other); //get squares that are overlapping
-//                        })
-//                        .findFirst()
-//                        .orElse(null);
-//    }
+    public static SquareBullet checkCollisionSquareBullet(BoxCollider other){
+        return (SquareBullet)
+                vector.stream()
+                        .filter(gameObject -> gameObject.isAlive)
+                        .filter(gameObject -> gameObject instanceof SquareBullet) //get all squares
+                        .filter((GameObject gameObject) -> {
+                            BoxCollider boxCollider = ((SquareBullet) gameObject).boxCollider; //get box collider
+                            return boxCollider.checkCollider(other); //get squares that are overlapping
+                        })
+                        .findFirst()
+                        .orElse(null);
+    }
 }
 
