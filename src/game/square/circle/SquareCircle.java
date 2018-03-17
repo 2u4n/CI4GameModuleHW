@@ -1,6 +1,7 @@
 package game.square.circle;
 
 import base.GameObject;
+import base.GameObjectManager;
 import base.Vector2D;
 import game.square.Square;
 
@@ -25,7 +26,7 @@ public class SquareCircle extends GameObject {
             square.position.set(rotate).addUp(100,100);
             square.velocity.set(this.velocity);
             this.squares.add(square);
-            GameObject.add(square);
+            GameObjectManager.instance.add(square);
         }
     }
 

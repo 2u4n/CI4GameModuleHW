@@ -1,17 +1,18 @@
 package game.player.playerbullet;
 
 import base.GameObject;
+import base.GameObjectManager;
 import game.enemy.Enemy;
 import game.square.Square;
-import game.square.bullet.SquareBullet;
 import physics.BoxCollider;
 
-public class HitSquare {
+public class BulletHitEnemy {
     public void run(PlayerBullet playerBullet){
         BoxCollider boxCollider = playerBullet.boxCollider;
-        Square square = GameObject.checkCollisionSquare(boxCollider);
-        if(square != null){
-            playerBullet.getHitSquare();
+        Enemy enemy = GameObjectManager.instance.checkCollisionEnemy(boxCollider);
+        if(enemy != null){
+            enemy.isAlive = false;
+            playerBullet.getHitEnemy();
         }
     }
 }

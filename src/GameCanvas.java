@@ -1,4 +1,5 @@
 import base.GameObject;
+import base.GameObjectManager;
 import game.background.Background;
 import game.enemy.bullet.EnemySpawner;
 import game.player.Player;
@@ -25,7 +26,7 @@ public class GameCanvas extends JPanel {
         this.setUpSquareMatrix();
         this.setUpSquareCircle();
 //        base.GameObject.add(new game.square.SquareSpawner());
-        GameObject.add(new EnemySpawner());
+        GameObjectManager.instance.add(new EnemySpawner());
 
     }
 
@@ -38,7 +39,7 @@ public class GameCanvas extends JPanel {
         SquareCircle squareCircle = new SquareCircle();
         squareCircle.position.set(100,100);
         squareCircle.create();
-        GameObject.add(squareCircle);
+        GameObjectManager.instance.add(squareCircle);
     }
 
     private void setUpSquareMatrix(){
@@ -46,7 +47,7 @@ public class GameCanvas extends JPanel {
         squareMatrix.position.set(20,20);
         squareMatrix.velocity.set(3,0);
         squareMatrix.create();
-        GameObject.add(squareMatrix);
+        GameObjectManager.instance.add(squareMatrix);
     }
 
     private void setUpBackBuffered(){
@@ -57,14 +58,14 @@ public class GameCanvas extends JPanel {
     private void setPlayer(){
         this.player = new Player();
         this.player.position.set(200,300);
-        GameObject.add(this.player);
+        GameObjectManager.instance.add(this.player);
     }
 
     private void setBackground(){
         //Phải "try" vì file có thể có 3 trường hợp: path sai, file ko tồn tại, file hỏng. Catch thì nó sẽ nhảy qua và không làm crash
         Background background = new Background();
         background.position.set(200,300);
-        GameObject.add(background);
+        GameObjectManager.instance.add(background);
     }
 
     @Override
@@ -73,11 +74,11 @@ public class GameCanvas extends JPanel {
     }
 
     public void runAll(){
-        GameObject.runAll();
+        GameObjectManager.instance.runAll();
     }
 
     public void renderAll(){
-        GameObject.renderAll(this.graphics);
+        GameObjectManager.instance.renderAll(this.graphics);
         this.repaint();
     }
 }

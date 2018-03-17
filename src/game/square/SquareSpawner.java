@@ -2,6 +2,7 @@ package game.square;
 
 import base.FrameCounter;
 import base.GameObject;
+import base.GameObjectManager;
 
 import java.util.Random;
 
@@ -19,7 +20,7 @@ public class SquareSpawner extends GameObject{
         if (this.frameCounter.run()) {
             Square square = new Square();
             square.position.set(random.nextInt(400), random.nextInt(600));
-            GameObject.add(square);
+            GameObjectManager.instance.add(square);
         }
     }
 }

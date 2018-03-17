@@ -1,16 +1,19 @@
 package game.player.playerbullet;
 
 import base.GameObject;
+import base.GameObjectManager;
+import game.enemy.Enemy;
 import game.square.Square;
 import game.square.bullet.SquareBullet;
 import physics.BoxCollider;
 
-public class HitBullet {
+public class BulletHitSquare {
     public void run(PlayerBullet playerBullet){
         BoxCollider boxCollider = playerBullet.boxCollider;
-        SquareBullet squareBullet = GameObject.checkCollisionSquareBullet(boxCollider);
-        if(squareBullet != null){
-            playerBullet.getHitSquareBullet();
+        Square square = GameObjectManager.instance.checkCollisionSquare(boxCollider);
+        if(square != null){
+            square.isAlive = false;
+            playerBullet.getHitSquare();
         }
     }
 }
